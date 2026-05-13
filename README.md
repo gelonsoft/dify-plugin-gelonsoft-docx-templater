@@ -1,0 +1,1 @@
+# dify-plugin-gelonsoft-docx-templater
