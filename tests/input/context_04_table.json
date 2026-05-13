@@ -1,0 +1,31 @@
+{
+  "sender_name": "ООО «СкладТех»",
+  "receiver_name": "ООО «СтройПрогресс»",
+  "shipment_date": "13 мая 2025 г.",
+  "waybill_number": "НК-2025-0089",
+  "products": [
+    {
+      "name": "Цемент М500 Д0",
+      "quantity": 150,
+      "note": "Мешки по 50 кг"
+    },
+    {
+      "name": "Арматура АIII Ø12 мм",
+      "quantity": 200,
+      "note": "Прутки 11.7 м"
+    },
+    {
+      "name": "Песок строительный",
+      "quantity": 50,
+      "note": "Тонны"
+    },
+    {
+      "name": "Щебень фракция 5-20 мм",
+      "quantity": 80,
+      "note": "Тонны"
+    }
+  ],
+  "total_quantity": 480,
+  "shipper_name": "Сидоров А.В.",
+  "receiver_signatory": "Иванов С.П."
+}

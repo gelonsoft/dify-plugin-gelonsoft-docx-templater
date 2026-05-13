@@ -1,0 +1,18 @@
+identity:
+  author: gelonsoft
+  name: docx_templater
+  label:
+    en_US: DOCX Templater
+    zh_Hans: DOCX模板生成器
+  description:
+    en_US: Generate Word documents from Jinja2 templates and JSON data
+    zh_Hans: 从Jinja2模板和JSON数据生成Word文档
+  tags:
+    - document
+    - productivity
+  icon: icon.svg
+tools:
+  - tools/render-template/render-template.yaml
+extra:
+  python:
+    source: provider/docx-templater.py

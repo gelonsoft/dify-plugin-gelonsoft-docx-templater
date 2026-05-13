@@ -1,0 +1,31 @@
+{
+  "buyer_name": "ИП Козлов Дмитрий Александрович",
+  "buyer_inn": "772512345678",
+  "invoice_date": "13 мая 2025 г.",
+  "invoice_number": "СФ-2025-0133",
+  "is_vip": true,
+  "products": [
+    {
+      "name": "Ноутбук Lenovo ThinkPad X1 Carbon",
+      "price": "195 000",
+      "quantity": 3
+    },
+    {
+      "name": "Монитор Dell UltraSharp U2723QE",
+      "price": "68 500",
+      "quantity": 5
+    },
+    {
+      "name": "Док-станция Dell WD22TB4",
+      "price": "42 000",
+      "quantity": 3
+    }
+  ],
+  "subtotal": "1 128 500",
+  "discount_percent": 10,
+  "discount_amount": "112 850",
+  "total": "1 015 650",
+  "include_vat": true,
+  "vat_amount": "169 275",
+  "urgency": "срочно"
+}

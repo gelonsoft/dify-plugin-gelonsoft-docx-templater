@@ -1,0 +1,15 @@
+# Testing data and scripts
+/tests/
+test_main.py
+tests/
+
+# Local development files
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+
+# IDE
+.idea/
+.vscode/

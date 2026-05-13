@@ -1,0 +1,53 @@
+identity:
+  name: render_template
+  author: gelonsoft
+  label:
+    en_US: Render Template
+    zh_Hans: 渲染模板
+  description:
+    en_US: Render a .docx template with Jinja2 placeholders using JSON context data
+    zh_Hans: 使用JSON上下文数据渲染包含Jinja2占位符的.docx模板
+
+parameters:
+  - name: template
+    type: file
+    required: true
+    label:
+      en_US: Template File
+      zh_Hans: 模板文件
+    human_description:
+      en_US: A .docx template file with Jinja2 placeholders like {{ variable_name }}
+      zh_Hans: 包含Jinja2占位符（如{{ variable_name }}）的.docx模板文件
+    llm_description: Upload a .docx template file containing Jinja2 placeholders like {{ variable_name }}
+    form: form
+    allowed_file_extensions:
+      - .docx
+
+  - name: context
+    type: string
+    required: true
+    label:
+      en_US: Context JSON
+      zh_Hans: 上下文JSON
+    human_description:
+      en_US: JSON string with data to fill the template placeholders
+      zh_Hans: 用于填充模板占位符的JSON数据字符串
+    llm_description: 'A JSON object as a string containing the data to render into the template. Example {"company_name": "Acme Corp", "date": "2026-05-13"}'
+    form: llm
+
+  - name: filename
+    type: string
+    required: false
+    label:
+      en_US: Output Filename
+      zh_Hans: 输出文件名
+    human_description:
+      en_US: Name for the generated file (without .docx extension)
+      zh_Hans: 生成文件的名称（不含.docx扩展名）
+    llm_description: 'Optional filename for the output document (without extension). Defaults to "output".'
+    form: llm
+    default: "output"
+
+extra:
+  python:
+    source: tools/render-template/render-template.py
